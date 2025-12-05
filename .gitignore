@@ -1,0 +1,16 @@
+# Pasta do Visual Studio
+.vs/
+
+# Pastas de build
+bin/
+obj/
+
+# Arquivos de usuário do Visual Studio
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Publicação
+publish/

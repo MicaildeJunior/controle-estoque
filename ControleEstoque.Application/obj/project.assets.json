@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "ControleEstoque.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ControleEstoque.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ControleEstoque.Domain.dll": {}
+        }
+      },
+      "ControleEstoque.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ControleEstoque.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ControleEstoque.Shared.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ControleEstoque.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ControleEstoque.Domain/ControleEstoque.Domain.csproj",
+      "msbuildProject": "../ControleEstoque.Domain/ControleEstoque.Domain.csproj"
+    },
+    "ControleEstoque.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ControleEstoque.Shared/ControleEstoque.Shared.csproj",
+      "msbuildProject": "../ControleEstoque.Shared/ControleEstoque.Shared.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "ControleEstoque.Domain >= 1.0.0",
+      "ControleEstoque.Shared >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\micao\\.nuget\\packages\\": {},
@@ -41,7 +76,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\micao\\source\\repos\\ControleEstoque\\ControleEstoque.Domain\\ControleEstoque.Domain.csproj": {
+              "projectPath": "C:\\Users\\micao\\source\\repos\\ControleEstoque\\ControleEstoque.Domain\\ControleEstoque.Domain.csproj"
+            },
+            "C:\\Users\\micao\\source\\repos\\ControleEstoque\\ControleEstoque.Shared\\ControleEstoque.Shared.csproj": {
+              "projectPath": "C:\\Users\\micao\\source\\repos\\ControleEstoque\\ControleEstoque.Shared\\ControleEstoque.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
