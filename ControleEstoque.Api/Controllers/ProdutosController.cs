@@ -5,7 +5,6 @@ using ControleEstoque.Application.Produtos.Repositories.Interface;
 using ControleEstoque.Application.Produtos.Request;
 using ControleEstoque.Application.Produtos.Response;
 using ControleEstoque.Domain.Enums;
-using ControleEstoque.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleEstoque.Api.Controllers;

@@ -21,7 +21,12 @@ public class ProdutoRepository : IProdutoRepository
         => await _context.Produtos.FirstOrDefaultAsync(p => p.CodigoProduto == codigoProduto);
 
     public async Task<List<Produto>> ObterTodosAsync()
-        => await _context.Produtos.AsNoTracking().ToListAsync();
+    {        
+        return await _context.Produtos
+                         .Where(p => p.Ativo)
+                         .AsNoTracking()
+                         .ToListAsync();
+    }
 
     public async Task AdicionarAsync(Produto produto)
     {
